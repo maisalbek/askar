@@ -33,7 +33,6 @@ const ProdDetail = () => {
             <IconButton onClick={() => navigate(-1)}>
               <ArrowBackIosNewIcon fontSize="large" sx={{ color: "black" }} />
             </IconButton>
-            <h1>DETAILS</h1>
           </div>
           {forEditVal ? (
             <>
@@ -42,7 +41,6 @@ const ProdDetail = () => {
                   <div className="detail_right">
                     <CardHeader
                       title={forEditVal.title}
-                      subheader={forEditVal.type}
                       sx={{
                         textAlign: "center",
                         fontWeight: "bold",
@@ -51,6 +49,16 @@ const ProdDetail = () => {
                     <CardMedia
                       component="img"
                       image={forEditVal.img}
+                      alt={forEditVal.title}
+                      sx={{
+                        width: "100%",
+                        height: "80vh",
+                        textAlign: "center",
+                      }}
+                    />
+                    <CardMedia
+                      component="img2"
+                      image={forEditVal.img2}
                       alt={forEditVal.title}
                       sx={{
                         width: "100%",
@@ -67,9 +75,6 @@ const ProdDetail = () => {
                         {forEditVal.description}
                       </Typography>
                     </CardContent>
-                    <CardActions disableSpacing id="price">
-                      ${forEditVal.price}
-                    </CardActions>
                   </div>
                 </div>
               </Card>

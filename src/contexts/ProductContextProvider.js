@@ -52,7 +52,7 @@ const ProductContextProvider = ({ children }) => {
   const addProduct = async (newProduct) => {
     try {
       let res = await axios.post(API, newProduct);
-      notify("success", `Products ${newProduct.title} был успешно добавлен!`);
+      notify("success", ` ${newProduct.title} была успешно добавлена!`);
       navigate("/admin");
     } catch (err) {
       notifyError(err);
@@ -62,7 +62,7 @@ const ProductContextProvider = ({ children }) => {
   const deleteProduct = async (prod) => {
     try {
       let res = await axios.delete(`${API}/${prod.id}`);
-      notify("success", `Продукт ${prod.title}был удален!`);
+      notify("success", `Новость ${prod.title}была удалена!`);
       getProducts();
     } catch (err) {
       notifyError(err);
@@ -84,7 +84,7 @@ const ProductContextProvider = ({ children }) => {
   const saveEditedProd = async (editedProd) => {
     try {
       let res = await axios.patch(`${API}/${editedProd.id}`, editedProd);
-      notify("info", `Продукт ${editedProd.title} был успешно обновлен`);
+      notify("info", ` ${editedProd.title} была успешно обновлена`);
       getProducts();
       navigate("/admin");
     } catch (err) {

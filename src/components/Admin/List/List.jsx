@@ -37,18 +37,19 @@ const List = () => {
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell sx={{ fontWeight: "bold" }}>Title</TableCell>
+                <TableCell sx={{ fontWeight: "bold" }}>Название</TableCell>
                 <TableCell sx={{ fontWeight: "bold" }} align="center">
-                  Type
+                  Картина
                 </TableCell>
                 <TableCell sx={{ fontWeight: "bold" }} align="right">
-                  Image
+                  Картина2
                 </TableCell>
                 <TableCell sx={{ fontWeight: "bold" }} align="right">
-                  Price
+                  Описание
                 </TableCell>
+
                 <TableCell sx={{ fontWeight: "bold" }} align="right">
-                  Actions
+                  Действия
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -61,11 +62,11 @@ const List = () => {
                   <TableCell component="th" scope="row">
                     {item.title}
                   </TableCell>
-                  <TableCell align="center">{item.type}</TableCell>
+                  <TableCell align="center">{item.img2}</TableCell>
                   <TableCell align="right">
                     <img width="40px" src={item.img} alt={item.title} />
                   </TableCell>
-                  <TableCell align="right">{item.price}</TableCell>
+                  <TableCell align="right">{item.description}</TableCell>
                   <TableCell align="right">
                     <IconButton onClick={() => handleDelete(item)}>
                       <DeleteIcon />

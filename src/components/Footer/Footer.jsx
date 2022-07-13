@@ -17,28 +17,42 @@ const Footer = () => {
           </ul>
         </div>
         <div className="second sp">
-          <p>Online services</p>
+          <p>Магистр</p>
           <ul>
-            <li>Payment Methods</li>
-            <li>Shipping Options</li>
+            <li>Телемедицина</li>
           </ul>
         </div>
         <div className="third sp">
-          <p>Boutique services</p>
+          <p>Наука </p>
           <ul>
-            <li>Store Locator</li>
-            <li>Book an Appointment</li>
+            <li>Научные направления</li>
+            <li>Аспирантура</li>
           </ul>
         </div>
         <div className="fourth sp">
-          <p>The house of chanel</p>
+          <p>Абитуриентам</p>
           <ul>
-            <li>Careers</li>
-            <li>Legal</li>
+            <li>Для поступления в бакалавриат</li>
+            <li>Для поступления в магистратуру</li>
+          </ul>
+        </div>
+        <div className="fourth sp">
+          <p>Партнеры</p>
+          <ul>
+            {/* <li>...</li>
+            <li>...</li> */}
+          </ul>
+        </div>
+        <div className="fourth sp">
+          <p>Ссылки</p>
+          <ul>
+            <li>Новости</li>
+            <li>Фотогалерея</li>
+            <li>Facebook</li>
           </ul>
         </div>
       </div>
-      <div className="icons">
+      {/* <div className="icons">
         <IconButton
           href="https://www.instagram.com/chanelofficial/"
           style={{ color: "white" }}
@@ -66,7 +80,7 @@ const Footer = () => {
       </div>
       <div className="footer-one">
         <a href="http://www.chanel.com/us">chanel.com</a>
-      </div>
+      </div> */}
     </div>
   );
 };

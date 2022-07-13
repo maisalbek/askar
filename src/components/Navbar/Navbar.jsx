@@ -172,57 +172,6 @@ export default function Navbar() {
 
       {/* end of my items */}
 
-      {/* shop */}
-      <MenuItem>
-        <RouterLink
-          to="/cart"
-          className="mobile-link"
-          // style={{
-          //   width: "100%",
-          // }}
-        >
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-haspopup="true"
-            color="inherit"
-          >
-            <Badge badgeContent={+cartLength} color="error">
-              <ShoppingCartIcon />
-            </Badge>
-          </IconButton>
-          <p
-            style={{
-              marginTop: "10px",
-            }}
-          >
-            Shop
-          </p>
-        </RouterLink>
-      </MenuItem>
-      {/* FAV */}
-      <MenuItem>
-        <RouterLink to="/fav" className="mobile-link">
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-haspopup="true"
-            color="inherit"
-          >
-            <Badge badgeContent={+favLength} color="error">
-              <ShoppingCartIcon />
-            </Badge>
-          </IconButton>
-          <p
-            style={{
-              marginTop: "10px",
-            }}
-          >
-            Favorites
-          </p>
-        </RouterLink>
-      </MenuItem>
-
       {/* material */}
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
@@ -269,9 +218,14 @@ export default function Navbar() {
                 fontSize: "16px",
               }}
               component={NavLink}
-              to="/about"
+              to="/"
             >
-              ABOUT
+              {/* <img
+                width="5%"
+                src="https://kstu.kg/fileadmin/user_upload/khpi_zel.jpeg"
+                alt=""
+              /> */}
+              ХПИ
             </Button>
             <Button
               sx={{
@@ -281,9 +235,82 @@ export default function Navbar() {
                 fontSize: "16px",
               }}
               component={NavLink}
-              to="/products"
+              to="/about"
             >
-              PRODUCTS
+              История
+            </Button>
+
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                fontSize: "16px",
+              }}
+              component={NavLink}
+              to="/nayka"
+            >
+              Наука
+            </Button>
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                fontSize: "16px",
+              }}
+              component={NavLink}
+              to="/abiturientam"
+            >
+              Абитуриентам
+            </Button>
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                fontSize: "16px",
+              }}
+              component={NavLink}
+              to="/sotrudniki"
+            >
+              Сотрудники
+            </Button>
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                fontSize: "16px",
+              }}
+              component={NavLink}
+              to="/news"
+            >
+              Новости
+            </Button>
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                fontSize: "16px",
+              }}
+              component={NavLink}
+              to="/galery"
+            >
+              Фотогалерея
+            </Button>
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                fontSize: "16px",
+              }}
+              component={NavLink}
+              to="/partners"
+            >
+              Партнеры
             </Button>
 
             {currentUser?.isAdmin && (
@@ -302,7 +329,7 @@ export default function Navbar() {
             )}
           </Box>
 
-          {/* logo */}
+          {/* logo
           <Typography
             className="mui-link"
             variant="h6"
@@ -327,42 +354,13 @@ export default function Navbar() {
             }}
           >
             ХПИ
-          </Typography>
+          </Typography> */}
           <Box
             sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
           >
             {/* Живой поиск */}
             <LiveSearch />
             {/* Живой поиск */}
-
-            <RouterLink to="/cart" style={{ color: "white" }}>
-              <IconButton
-                size="large"
-                edge="end"
-                aria-label="account of current user"
-                aria-haspopup="true"
-                color="inherit"
-              >
-                <Badge badgeContent={+cartLength} color="error">
-                  <ShoppingCartIcon />
-                </Badge>
-              </IconButton>
-            </RouterLink>
-
-            {/* fav */}
-            <RouterLink to="/fav" style={{ color: "white" }}>
-              <IconButton
-                size="large"
-                edge="end"
-                aria-label="account of current user"
-                aria-haspopup="true"
-                color="inherit"
-              >
-                <Badge badgeContent={+favLength} color="error">
-                  <BookmarksIcon />
-                </Badge>
-              </IconButton>
-            </RouterLink>
 
             <IconButton
               size="large"

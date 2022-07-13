@@ -1,4 +1,4 @@
-/* .active {
+.active {
   text-decoration: none !important;
   color: grey !important;
 }
@@ -12,5 +12,5 @@
   color: #fff;
 }
 .navbar-container {
-  background: black !important;
-} */
+  background: #323a45 !important;
+}

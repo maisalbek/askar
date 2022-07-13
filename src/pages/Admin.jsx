@@ -10,7 +10,7 @@ const Admin = () => {
     <div>
       <Container maxWidth="lg">
         <div style={{ display: "flex", flexDirection: "start" }}>
-          <h1>Admin page</h1>
+          <h1>Страница админа</h1>
         </div>
         {pathname !== "/admin/add" ? (
           <Link to="add">

@@ -10,66 +10,6 @@
   margin: 0 auto;
 }
 
-.video-bg {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.video-bg video {
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  z-index: 1;
-  opacity: 0.7;
-}
-
-.video-bg__content {
-  z-index: 2;
-  text-align: center;
-  margin: 1% 5%;
-  font-size: 1.2rem;
-}
-
-.video-bg__content h2 {
-  font-size: 3rem;
-}
-
-.text_content {
-  max-width: 1400px;
-  margin: 5vw auto;
-  padding: 0 20px;
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.image-bg button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  text-align: center;
-
-  font-size: 1.2rem;
-}
-
-.image-bg {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
 .image-bg img {
   width: 100%;
   opacity: 0.7;
@@ -112,4 +52,30 @@
   font-size: 1.5rem;
   margin-right: 5%;
   font-weight: 800;
+}
+
+.history {
+  margin: 0 5%;
+  text-align: justify;
+}
+
+.h1-history {
+  text-align: center;
+}
+
+.nauka > li {
+  color: black;
+}
+
+.nayka {
+  margin: 0 5%;
+  text-align: justify;
+  color: black !important;
+}
+.nauka-second-text > li {
+  color: black;
+}
+
+.ainura > li {
+  color: black;
 }

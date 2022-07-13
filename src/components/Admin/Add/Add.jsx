@@ -14,7 +14,7 @@ const Add = () => {
         <IconButton onClick={() => navigate(-1)}>
           <ArrowBackIosNewIcon fontSize="large" sx={{ color: "black" }} />
         </IconButton>
-        <h2>U can add a new product</h2>
+        <h2>Добавить новость</h2>
       </div>
       <Form saveValues={addProduct} compForEdit={false} />
     </div>

@@ -14,6 +14,7 @@ const initValues = {
   price: "",
   description: "",
   img: "",
+  img2: "",
 };
 
 const Form = ({ saveValues, compForEdit, forEditVal, getOneProduct }) => {
@@ -65,12 +66,12 @@ const Form = ({ saveValues, compForEdit, forEditVal, getOneProduct }) => {
           value={inpValues.title}
           onChange={(e) => handleChange(e)}
           id="standard-basic"
-          label="Title"
+          label="Название"
           variant="standard"
           sx={{ color: "white" }}
           margin="normal"
         />
-        <FormControl fullWidth margin="normal">
+        {/* <FormControl fullWidth margin="normal">
           <InputLabel id="demo-simple-select-label">Type</InputLabel>
           <Select
             labelId="demo-simple-select-standard-label"
@@ -84,8 +85,8 @@ const Form = ({ saveValues, compForEdit, forEditVal, getOneProduct }) => {
             <MenuItem value={"watches"}>Watches</MenuItem>
             <MenuItem value={"makeup"}>Makeup</MenuItem>
           </Select>
-        </FormControl>
-        <TextField
+        </FormControl> */}
+        {/* <TextField
           type="number"
           name="price"
           value={inpValues.price}
@@ -94,21 +95,30 @@ const Form = ({ saveValues, compForEdit, forEditVal, getOneProduct }) => {
           label="Price"
           variant="standard"
           margin="normal"
-        />
+        /> */}
         <TextField
           name="img"
           value={inpValues.img}
           onChange={(e) => handleChange(e)}
           id="standard-basic"
-          label="Image"
+          label="Картина"
           variant="standard"
+        />
+        <TextField
+          name="img2"
+          value={inpValues.img2}
+          onChange={(e) => handleChange(e)}
+          id="standard-basic"
+          label="Картина2"
+          variant="standard"
+          multiline
         />
         <TextField
           name="description"
           value={inpValues.description}
           onChange={(e) => handleChange(e)}
           id="standard-basic"
-          label="Description"
+          label="Описание"
           variant="standard"
           multiline
           rows={3}
@@ -119,7 +129,7 @@ const Form = ({ saveValues, compForEdit, forEditVal, getOneProduct }) => {
           variant="contained"
           sx={{ backgroundColor: "black", marginBottom: "20px" }}
         >
-          Submit
+          Добавить
         </Button>
       </form>
     </div>
