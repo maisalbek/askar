@@ -14,7 +14,7 @@ import RequireAuth from "./components/Auth/RequireAuth";
 import NoMatch from "./pages/NoMatch";
 import Nayka from "./pages/nayka.jsx";
 import Partners from "./pages/partners.jsx";
-import News from "./pages/news.jsx";
+// import News from "./pages/news.jsx";
 import Sotrudniki from "./pages/sotrudniki.jsx";
 import Galery from "./pages/galery";
 import Abitur from "./pages/abitur";
@@ -57,7 +57,7 @@ const MyRoutes = () => {
         <Route path="/nayka" element={<Nayka />} />
         <Route path="/abiturientam" element={<Abitur />} />
         <Route path="/sotrudniki" element={<Sotrudniki />} />
-        <Route path="/news" element={<News />} />
+        {/* <Route path="/news" element={<News />} /> */}
         <Route path="/partners" element={<Partners />} />
         <Route path="/photogalery" element={<Galery />} />
         <Route

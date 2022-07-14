@@ -1,5 +1,5 @@
-// export const API = "http://localhost:8000/products";
-export const API = "https://kafedra-hpi.herokuapp.com/products";
+export const API = "http://localhost:8000/products";
+// export const API = "https://kafedra-hpi.herokuapp.com/products";
 
 export const ACTIONS = {
   GET_PRODUCTS: "GET_PRODUCTS",

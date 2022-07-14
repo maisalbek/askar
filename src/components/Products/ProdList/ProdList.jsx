@@ -102,7 +102,7 @@ const ProdList = () => {
         }}
       >
         <Pagination
-          count={+pageTotalCount}
+          count={1}
           sx={{ display: "inline-block", color: "black" }}
           onChange={(event, pageVal) => setPage(+pageVal)}
           page={+page}
