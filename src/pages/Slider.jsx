@@ -1,71 +1,58 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
-    return (
+import React from "react";
+
+export default function SimpleSlider() {
+  return (
+    <div>
       <div>
-        <Slider {...settings}>
-          <div>
-            <img
-              width="100%"
-              height="600px"
-              src="https://funtime.kiev.ua/uploads/img/gallery/big/2021/03/galereya-lart-3-6057aef676cae.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              width="100%"
-              height="600px"
-              src="https://nasledie.gallery/wp-content/uploads/2020/12/bez-imeni-10069-scaled.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              width="100%"
-              height="600px"
-              src="https://i.pinimg.com/564x/0f/79/9d/0f799d7c84858a2605a51647b11fe41c.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              width="100%"
-              height="600px"
-              src="https://24.kg/files/media/211/211113.JPG"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              width="100%"
-              height="600px"
-              src="https://24.kg/files/media/165/165409.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              width="100%"
-              height="600px"
-              src="https://алаприма.рф/uploaded_files/admin/ww/pics/e8b6439c3c3ce979227f6f8e3f85b9fc.jpg"
-              alt=""
-            />
-          </div>
-        </Slider>
+        <img
+          width="100%"
+          height="600px"
+          src="https://funtime.kiev.ua/uploads/img/gallery/big/2021/03/galereya-lart-3-6057aef676cae.jpg"
+          alt=""
+        />
       </div>
-    );
-  }
+      <div>
+        <img
+          width="100%"
+          height="600px"
+          src="https://nasledie.gallery/wp-content/uploads/2020/12/bez-imeni-10069-scaled.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          width="100%"
+          height="600px"
+          src="https://i.pinimg.com/564x/0f/79/9d/0f799d7c84858a2605a51647b11fe41c.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          width="100%"
+          height="600px"
+          src="https://24.kg/files/media/211/211113.JPG"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          width="100%"
+          height="600px"
+          src="https://24.kg/files/media/165/165409.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          width="100%"
+          height="600px"
+          src="https://алаприма.рф/uploaded_files/admin/ww/pics/e8b6439c3c3ce979227f6f8e3f85b9fc.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  );
 }
 
 // import React, { Component, useEffect } from "react";
